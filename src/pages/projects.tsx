@@ -2,6 +2,7 @@ import React from "react";
 import Cards from "../backend/data";
 import slagville from "../../public/wujuProject.png";
 import Image from "next/image";
+import Link from "next/link";
 function ProjectPage() {
   console.log(Cards.ProjectCards[1].image);
   // http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FslagvilleProject.669fb9d5.png&w=3840&q=75 slagville image link
@@ -10,12 +11,18 @@ function ProjectPage() {
   // http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FwujuProject.ebac9899.png&w=3840&q=75 wuju image link
 
   return (
-    <div className="bg-[#171717] w-screen h-screen flex justify-center items-center text-white flex-wrap text-center content-center">
+    <div className="bg-[#171717] w-screen h-auto flex justify-center items-center text-white flex-wrap text-center content-center">
       <div className="max-w-[80%] flex flex-wrap justify-center">
         {Cards.ProjectCards.map((card) => (
-          <div className="flex flex-col m-8  hover:scale-125 transition-all">
-            <h1 className="py-2">{card.title}</h1>
-            <img src={card.image} alt={card.title} className="w-98 h-48" />
+          <div key={card.id}>
+            <Link href={card.link}>
+              <div className="flex flex-col m-8 hover:scale-110 cursor-pointer transition-all w-[420px] h-[500px] justify-start items-center text-center ">
+                <h1 className="py-4 font-bold">{card.title}</h1>
+                <div className="p-2" />
+                <img src={card.image} alt={card.title} className="w-96 h-48" />
+                <p className="p-4 pt-4">{card.description}</p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
