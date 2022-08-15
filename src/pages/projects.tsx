@@ -21,13 +21,16 @@ function ProjectPage() {
   };
 
   return (
-    <div className="bg-[#171717] w-screen h-auto flex justify-center items-center flex-wrap transition-all">
-      <div className="max-w-[1500px] flex flex-wrap justify-center">
+    <div className="bg-slate-50 w-screen h-auto flex justify-center items-center flex-wrap transition-all">
+      <div className="h-64 w-[90%] bg-slate-100 absolute top-85 left-1/4 rounded-full z-1"></div>
+      <div className="h-64 w-[90%] bg-slate-100 absolute top-40 right-2/4 rounded-full z-1"></div>
+      <div className="h-64 w-[90%] bg-slate-200 absolute bottom-0 left-2/4 rounded-full z-1"></div>
+      <div className="max-w-[1500px] flex flex-wrap justify-center z-10">
         {Cards.ProjectCards.map((card) => (
           <div key={card.id}>
-            <div className="bg-white flex flex-col m-8 hover:scale-105 cursor-pointer transition-all w-[420px] justify-start items-center text-center p-4 h-auto min-h-[450px] overflow-hidden border-2 rounded-md bg-clip-text bg-gradient-to-r from-t-pink via-t-purple to-t-orange animate-gradient-text">
+            <div className="bg-white flex flex-col m-8 hover:scale-105 cursor-pointer transition-all w-[360px] p-4 justify-start items-center text-center h-auto min-h-[450px] overflow-hidden border-2 rounded-md border-[#171717] shadow-2xl">
               <Link href={card.link} target="_blank">
-                <h1 className="pt-2 font-bold text-center text-transparent bold-text bg-clip-text bg-gradient-to-r from-t-pink via-t-purple to-t-orange animate-gradient-text py-4">
+                <h1 className="pt-2 font-bold text-center text-transparent bold-text bg-clip-text bg-gradient-to-r from-slate-600 via-red-500 to-black animate-gradient-text py-4">
                   {card.title}
                 </h1>
               </Link>
@@ -35,21 +38,19 @@ function ProjectPage() {
               <img
                 src={card.image}
                 alt={card.title}
-                className="w-[432px] h-[243] rounded-md"
+                className="w-[360px] h-auto rounded-md"
               />
               <div className="max-w-[430px] flex-grow">
                 {toggle === card.id ? (
-                  <div className="p-4 pt-4 text-transparent">
-                    {card.description}
-                  </div>
+                  <div className="p-4 pt-4">{card.description}</div>
                 ) : (
-                  <div className="p-2 pt-4 font-bold text-red-400 min-h-[6rem]">
+                  <div className="p-2 pt-4 font-bold min-h-[6rem]">
                     {card.headline}
                   </div>
                 )}
                 <div
                   onClick={(e) => clickHandler(e, card.id)}
-                  className="pt-2 font-semibold text-center text-transparent bold-text bg-clip-text bg-gradient-to-r from-t-pink via-t-purple to-t-orange animate-gradient-text"
+                  className="pt-2 cursor-pointer font-semibold text-center hover:underline opacity-50 hover:opacity-90 transition-all"
                 >
                   {toggle === card.id ? `Hide...` : `Read more...`}
                 </div>
