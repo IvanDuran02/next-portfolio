@@ -45,6 +45,15 @@ const Cards = {
         "https://res.cloudinary.com/venerable/image/upload/v1660865469/medium_website.png",
       link: "https://ivan-medium-clone.vercel.app/",
     },
+    {
+      id: 5,
+      title: "Medium Clone",
+      headline: "Created with - HTML, CSS",
+      description: "Simple HTML and CSS landing page.",
+      image:
+        "https://res.cloudinary.com/venerable/image/upload/v1660866219/bookmark_site.png",
+      link: "https://bookmark-azure.vercel.app/",
+    },
   ],
 };
 

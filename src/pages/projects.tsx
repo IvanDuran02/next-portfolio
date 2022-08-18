@@ -22,9 +22,6 @@ function ProjectPage() {
 
   return (
     <div className="bg-slate-50 w-screen h-auto flex justify-center items-center flex-wrap transition-all">
-      <div className="h-64 w-[90%] bg-slate-100 absolute top-85 left-1/4 rounded-full z-1"></div>
-      <div className="h-64 w-[90%] bg-slate-100 absolute top-40 right-2/4 rounded-full z-1"></div>
-      <div className="h-64 w-[90%] bg-slate-200 absolute bottom-0 left-2/4 rounded-full z-1"></div>
       <div className="max-w-[1500px] flex flex-wrap justify-center z-10">
         {Cards.ProjectCards.map((card) => (
           <div key={card.id}>
