@@ -25,7 +25,7 @@ function ProjectPage() {
       <div className="max-w-[1500px] flex flex-wrap justify-center z-10">
         {Cards.ProjectCards.map((card) => (
           <div key={card.id}>
-            <div className="bg-white flex flex-col m-8 hover:scale-105 cursor-pointer transition-all w-[360px] p-4 justify-start items-center text-center h-auto min-h-[450px] overflow-hidden border-2 rounded-md border-[#171717] shadow-2xl">
+            <div className="bg-white flex flex-col m-8 hover:scale-105 cursor-pointer transition-all w-[360px] p-4 justify-start items-center text-center h-auto min-h-[450px] overflow-hidden border-2 rounded-md border-[#171717] shadow-2xl focus:outline-none outline-none">
               <Link href={card.link} target="_blank">
                 <h1 className="pt-2 font-bold text-center text-transparent bold-text bg-clip-text bg-gradient-to-r from-slate-600 via-red-500 to-black animate-gradient-text py-4">
                   {card.title}
