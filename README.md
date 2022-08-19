@@ -1,3 +1,4 @@
 # NextJS and Tailwind Portfolio site
 
-- Website - [https://www.jasminvillatoroportfolio.com/](https://www.jasminvillatoroportfolio.com/)
+Link to site: https://ivans-portfolio.vercel.app
+
