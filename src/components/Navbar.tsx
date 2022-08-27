@@ -4,7 +4,7 @@ import React from "react";
 function Navbar() {
   return (
     <div className="bg-[#171717] flex flex-col justify-inbetween items-center">
-      <div className="text-white flex space-x-6 py-8 text-xl">
+      <div className="text-white flex space-x-6 py-8 md:py-12 lg:py-16 text-xl">
         <Link href="./">
           <h3 className="hover:scale-110 transition-all cursor-pointer hover:text-t-red">
             Home
