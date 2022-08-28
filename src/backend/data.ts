@@ -43,7 +43,7 @@ const Cards = {
         "Clone of the Medium blogging site that uses Sanity.io as a CMS.",
       image:
         "https://res.cloudinary.com/venerable/image/upload/v1660865469/medium_website.png",
-      link: "https://ivan-medium-clone.vercel.app/",
+      link: "https://ivan-medium-blog.vercel.app/",
     },
     {
       id: 5,
