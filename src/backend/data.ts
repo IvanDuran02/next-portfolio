@@ -15,16 +15,16 @@ const Cards = {
         "https://res.cloudinary.com/venerable/image/upload/v1660865494/glass_website.png",
       link: "https://glasswebsite.vercel.app/",
     },
-    // {
-    //   id: 2,
-    //   title: "Slagville",
-    //   headline: "Created with - React, Tailwind, Typescript, MongoDB",
-    //   description:
-    //     "Project I made for fun to show some friends. For the most part its a static blog-like site, but I was a bit more ambitious with the project and added a chatting functionality. I used a database to store messages from a post form on the front-end. I also Discord for OAuth2 authentication.",
-    //   image:
-    //     "https://res.cloudinary.com/venerable/image/upload/v1660865503/slagville_site.png",
-    //   link: "https://slagville.vercel.app/",
-    // },
+    {
+      id: 2,
+      title: "Estate Guesser",
+      headline: "Created with - NextJS, tRPC, PostgreSQL, Prisma, TailwindCSS",
+      description:
+        "I thought this would be a cool and unique project to make. I ended up making my own API to scrape zillow for housing data to use on my app. This website shows you a random house and you, the player, guesses the price of the house!",
+      image:
+        "https://res.cloudinary.com/venerable/image/upload/v1665100910/estate-guesser.png",
+      link: "https://estate-guesser.vercel.app/",
+    },
     {
       id: 3,
       title: "Create React Project",
