@@ -26,7 +26,7 @@ function ProjectPage() {
         {Cards.ProjectCards.map((card) => (
           <div key={card.id}>
             {card.id === 2 ? (
-              <div className="bg-white flex flex-col m-8 scale-110 hover:scale-125 cursor-pointer transition-all w-[360px] p-4 justify-start items-center text-center h-auto min-h-[450px] overflow-hidden border-2 rounded-md border-yellow-400 shadow-2xl focus:outline-none outline-none">
+              <div className="bg-white flex flex-col m-8 scale-105 hover:scale-110  cursor-pointer transition-all w-[360px] p-4 justify-start items-center text-center h-auto min-h-[450px] overflow-hidden border-2 rounded-md border-yellow-400 shadow-2xl focus:outline-none outline-none">
                 <Link href={card.link} target="_blank">
                   <h1 className="pt-2 font-bold text-center text-transparent bold-text bg-clip-text bg-gradient-to-r from-slate-600 via-red-500 to-black animate-gradient-text py-4">
                     {card.title}
